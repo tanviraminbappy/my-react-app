@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script>
+        function helloFucntion(){
+
+            let helloMessage = "How are you";
+            alert(helloMessage);
+        }
+
+        function stringFunc() {
+            const poem = "The wide ocean";
+            const author = "Pablo Neruda";
+            // const favePom = "My faborite poem is" +poem+ "by" +author+ ".";
+
+            const favePom = `My favorite poen is ${poem} by ${author}.`;
+            alert(favePom);
+
+            const stringPrimitive = "A new string.";
+            const stringObject = new String("A new string.");
+
+        }
+
+        function fish() {
+            let fishes = ["shark", "cuttlefish", "clownfish", "eel"];
+            for( let fish of fishes){
+                console.log(fish);
+
+            }
+
+        }
+
+        function printObjects() {
+            let sammy = {firstName:"Sammy", lastName:"Shark", color:"blue", location:"ocean"};
+            let fish = JSON.stringify(sammy, null, 4);
+            console.log(fish);
+            alert(fish);
+
+
+        }
+
+    </script>
+</head>
+<body>
+<p><button onclick="helloFucntion()">Click Me!</button></p>
+<p><button onclick="fish()"> Fish</button></p>
+<p><button onclick="printObjects()">JsonObject</button></p>
+<p><button onclick="stringFunc()"> Poem</button></p>
+</body>
+</html>
