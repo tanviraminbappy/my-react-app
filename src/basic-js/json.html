@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+
+
+<body>
+<p id="user" ></p>
+<script>
+    var string = '{"first_name" : "Sammy", "last_name" : "Shark", "location" : "Ocean"}';
+    var object = JSON.parse(string);
+    document.getElementById("user").innerHTML = "First Name:" +object.first_name+ " " + "Last Name:" +object.last_name+ " " + "Location:" +object.location+ "."; 
+    
+
+    </script>
+
+
+</body>
+
+</html>
