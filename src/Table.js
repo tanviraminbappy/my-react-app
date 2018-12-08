@@ -17,6 +17,7 @@ const TableBody = props => {
             <tr key={index}>
                 <td>{row.name}</td>
                 <td>{row.job}</td>
+                <td><button onClick={() => props.removeEmployee(index)}>Delete</button></td>
             </tr>
         );
     });
@@ -27,7 +28,7 @@ const TableBody = props => {
 
 class Table extends Component {
     render() {
-        const {employeeInfo} = this.props;
+        const {employeeInfo, removeEmployee} = this.props;
         return (
             <table>
                 {/* <thead>
@@ -55,7 +56,7 @@ class Table extends Component {
                     </tr>
                 </tbody> */}
                 <TableHeader/>
-                <TableBody employeeInfo={employeeInfo}/>
+                <TableBody employeeInfo={employeeInfo} removeEmployee={removeEmployee}/>
             </table>
         );
     }
