@@ -40,7 +40,7 @@ class App extends Component {
      return(
          <div className="App">
             <h1>Employee Details</h1>
-            <Table employeeInfo={this.employess} removeEmployee={this.removeEmployee}/>
+            <Table employeeInfo={this.state.employess} removeEmployee={this.state.removeEmployee}/>
          </div>
      );
      
