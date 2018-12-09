@@ -5,24 +5,25 @@ function formatDate(date) {
 }
 
 function Avatar(props) {
-    return(
-        <img className="avatar" src={props.user.avatarUrl} alt={props.user.name}/>
+    return (
+      <img className="Avatar"
+        src={props.user.avatarUrl}
+        alt={props.user.name}
+      />
+  
     );
+  }
 
-}
-
-function UserInfo(props) {
-    return(
-        <div className="user-info">
-            <Avatar user={props.author}/>
-            <div className="user-name">
-                {props.user.name}
-            </div>
-
+  function UserInfo(props) {
+    return (
+      <div className="UserInfo">
+        <Avatar user={props.user} />
+        <div className="UserInfo-name">
+          {props.user.name}
         </div>
+      </div>
     );
-
-}
+  }
 
 function Comment(props) {
     return (
