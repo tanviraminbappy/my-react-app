@@ -13,7 +13,7 @@ import './index.css';
 //                 className="square"
 //                 onClick={() => this.props.onclick()}
 //             >
-//                 {this.props.value}
+//                 {this.props.name}
 //             </button>
 //         );
 //     }
@@ -22,7 +22,7 @@ import './index.css';
 function Square(props) {
     return (
         <button className="square" onClick={props.onClick}>
-            {props.value}
+            {props.name}
         </button>
     );
 }
