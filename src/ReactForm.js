@@ -5,16 +5,16 @@ class ReactForm extends Component{
         this.state = {name: '',
         clinicalText: ''};
 
-        this.handleNameChange = this.handleNameChange.bind(this);
-        this.handleClinicalTextChange = this.handleNameChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        // this.handleNameChange = this.handleNameChange.bind(this);
+        // this.handleClinicalTextChange = this.handleNameChange.bind(this);
+        // this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleNameChange = event => {
-        this.setState({name: event.target.name.toUpperCase()});
+        this.setState({name: event.target.value.toUpperCase()});
     }
     handleClinicalTextChange = event => {
-        this.setState({clinicalText: event.target.clinicalText});
+        this.setState({clinicalText: event.target.value});
     }
 
     handleSubmit = event => {
@@ -30,11 +30,11 @@ class ReactForm extends Component{
                 <form onSubmit={this.handleSubmit}>
                     <label>
                         Name:
-                        <input type="text" placeholder="Tanvir" value={this.state.name} onChange={this.handleNameChange} maxLength="30"/>
+                        <input type="text" id="name" placeholder="Name"  onChange={this.handleNameChange} maxLength="30"/>
                     </label>
                     <label>
                         Cinical Text:
-                        <input type="textarea" placeholder="Clinical Text" value={this.state.clinicalText} onChange={this.handleClinicalTextChange} maxLength="2000"/>
+                        <input type="textarea" id="textarea" placeholder="Clinical Text"  onChange={this.handleClinicalTextChange} maxLength="2000"/>
                     </label>
                     <input type="submit" value="Submit" />
                 </form>
