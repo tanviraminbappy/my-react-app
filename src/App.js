@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
-import Clock from './Clock';
-import Toggle from './Toggle';
-import LoginContro from './LoginControl';
-import Comments from './Comments';
-import Page from './Page';
-import ReactList from './ReactList';
-import ReactForm from './ReactForm';
-import TemperatureCalculator from "./TemperatureCalculator";
+import Clock from './react-basic/Clock';
+import Toggle from './react-basic/Toggle';
+import LoginContro from './react-basic/LoginControl';
+import Comments from './react-basic/Comments';
+import Page from './react-basic/Page';
+import ReactList from './react-basic/ReactList';
+import ReactForm from './react-basic/ReactForm';
+import TemperatureCalculator from "./react-basic/TemperatureCalculator";
 
-import IncorporationForm from './IncorporationForm';
+import IncorporationForm from './react-basic/IncorporationForm';
 
 
 class App extends Component {
