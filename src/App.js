@@ -7,9 +7,13 @@ import Page from './react-basic/Page';
 import ReactList from './react-basic/ReactList';
 import ReactForm from './react-basic/ReactForm';
 import TemperatureCalculator from "./react-basic/TemperatureCalculator";
-
 import IncorporationForm from './react-basic/IncorporationForm';
 
+import Welcome from './react-basic/state-props/Welcome';
+import WikiApi from './react-basic/WikiApi';
+import PostList from './react-basic/posts/PostList';
+import Dropdown from './react-basic/dropdown-menu/Dropdown';
+import './App.css';
 
 class App extends Component {
 
@@ -18,15 +22,23 @@ class App extends Component {
 
 
         return <div>
-            <Comments/>
-            <Clock/>
-            <Toggle/>
-            <LoginContro/>
-            <Page/>
-            <ReactList/>
-            <ReactForm/>
-            <TemperatureCalculator/>
+            {/*<Comments/>*/}
+            {/*<Clock/>*/}
+            {/*<Toggle/>*/}
+            {/*<LoginContro/>*/}
+            {/*<Page/>*/}
+            {/*<ReactList/>*/}
+            {/*<ReactForm/>*/}
+            {/*<TemperatureCalculator/>*/}
             {/*<IncorporationForm/>*/}
+
+            <Welcome/>
+            <WikiApi/>
+            <PostList/>
+            <Dropdown/>
+
+
+
 
 
         </div>;
