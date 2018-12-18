@@ -14,6 +14,7 @@ import WikiApi from './react-basic/WikiApi';
 import PostList from './react-basic/posts/PostList';
 import Dropdown from './react-basic/dropdown-menu/Dropdown';
 import './App.css';
+// import PlanetSearch from './react-basic/planet/PlanetSearch';
 
 class App extends Component {
 
@@ -27,19 +28,16 @@ class App extends Component {
             {/*<Toggle/>*/}
             {/*<LoginContro/>*/}
             {/*<Page/>*/}
-            {/*<ReactList/>*/}
+            <ReactList/>
             {/*<ReactForm/>*/}
             {/*<TemperatureCalculator/>*/}
             {/*<IncorporationForm/>*/}
+            {/*<PlanetSearch/>*/}
 
-            <Welcome/>
-            <WikiApi/>
-            <PostList/>
-            <Dropdown/>
-
-
-
-
+            {/*<Welcome/>*/}
+            {/*<WikiApi/>*/}
+            {/*<PostList/>*/}
+            {/*<Dropdown/>*/}
 
         </div>;
     }

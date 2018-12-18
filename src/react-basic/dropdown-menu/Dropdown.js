@@ -121,3 +121,24 @@ export default Dropdown;
 // }
 //
 // export default BootstrapSelect;
+
+
+
+// getNavs = () => {
+//     const listContent = this.state.navItems.map((item, index) => {
+//         // const children = <ListGroup>
+//         //     {item.annotations.map((child, childIndex) => <ListGroupItem key={childIndex}>{child.name}</ListGroupItem>)}
+//         // </ListGroup>;
+//
+//         return <ListGroupItem key={index}>
+//             {item.type}
+//             {/*<br/>*/}
+//             {/*{children}*/}
+//         </ListGroupItem>
+//     });
+//     return (
+//         <ListGroup>
+//             {listContent}
+//         </ListGroup>
+//     )
+// }
