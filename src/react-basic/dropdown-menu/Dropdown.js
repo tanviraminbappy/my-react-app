@@ -142,3 +142,7 @@ export default Dropdown;
 //         </ListGroup>
 //     )
 // }
+
+// const children = <div>
+//     {menu.annotations.map((submenu, submenuIndex) => <p onClick={this.handleSelect} key={submenuIndex}>{submenu.name}</p>)}
+// </div>;
